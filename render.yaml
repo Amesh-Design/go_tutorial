@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: go-backend-api
+    runtime: go
+    plan: free
+    region: oregon
+    buildCommand: go build -o server ./cmd/api
+    startCommand: ./server
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: DB_URL
+        sync: false # Set securely in Render dashboard

@@ -1,0 +1,15 @@
+# Binaries & executables
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+server
+
+# Environment configuration secrets
+.env
+*.local
+
+# IDE configurations
+.idea/
+.vscode/
